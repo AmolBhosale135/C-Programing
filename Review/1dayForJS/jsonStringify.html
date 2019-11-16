@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+let Object = {
+  name: "AMol",
+  age: 25,
+  address: {
+    street: "NG Road",
+    city: "NGR"
+  },
+  interests: ["Cricket", "tp"]
+}
+
+let obj = JSON.stringify(Object);
+// console.log(obj);
+
+document.getElementById("demo").innerHTML =
+"Name: " + obj.name +  "<br>" +
+"age:" + obj.age + "<br>"
+"address: " + obj.address;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var s = '{"first_name" : "Amol", "last_name" : "Bhosale", "location" : "Pune"}';
+
+var obj = JSON.parse(s);
+
+document.getElementById("demo").innerHTML =
+"Name: " + obj.first_name + " " + obj.last_name + "<br>" +
+"Location: " + obj.location;
+</script>
+
+</body>
+</html>
